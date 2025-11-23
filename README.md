@@ -8,7 +8,7 @@
 
 * ### &nbsp;**Description**
 
-##### The DNA Sequence Analyzer is a Python-based **bioinformatics tool** designed to help biology students and researchers analyze genetic sequences and simulate genetic    mutations using Python. It allows users to validate DNA strings, calculate detailed statistics like GC content, find patterns, and simulate genetic mutations. The program uses Python's string manipulation capabilities to perform biological calculations instantly, replacing the need for manual errors.
+##### The DNA Sequence Analyzer is a Python-based **bioinformatics tool** designed to help students and researchers analyze genetic sequences and simulate genetic    mutations using Python. It allows users to validate DNA strings, calculate detailed statistics like GC content, find patterns, and simulate genetic mutations. The program uses Python's string manipulation capabilities to perform biological calculations instantly, replacing the need for manual errors.
 
 ##### 
 
