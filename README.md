@@ -88,6 +88,6 @@
 
 
 
-* ### **Made By**
+* ### **Author**
 
 ##### &nbsp; - **SAURABH RANJAN (25BAI11436)**
