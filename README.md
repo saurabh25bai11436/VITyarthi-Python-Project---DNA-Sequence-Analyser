@@ -2,7 +2,7 @@
 
 
 
-## &nbsp; *DNA Sequence Analyzer*
+## &nbsp; ***DNA Sequence Analyzer***
 
 
 
@@ -88,8 +88,29 @@
 
 
 
+* ### **How to Run**
+
+###### 1\. Install Python 3.0 or above on your system.
+
+###### 2\. Clone this repository.
+
+###### 3\. Open the terminal/command prompt in the folder.
+
+###### 4\. Run the command: `main.py`
+
+
+
+* ### **Testing Instructions**
+
+###### &nbsp; -Input: Enter 'ATCGGCATCG'
+
+###### &nbsp; -Expected Output: You should see "GC Content: 50%" and "RNA: AUCGGCAUCG".  
+
+###### &nbsp; -Mutation Test: Select Option 3 in the menu and enter "10%". The system will show the mutated string with 1 base changed.
+
+###### 
+
 * ### **Author**
 
 ##### &nbsp; - **SAURABH RANJAN (25BAI11436)**
-
 
