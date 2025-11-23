@@ -2,7 +2,7 @@
 
 
 
-## &nbsp;**Project** - *DNA Sequence Analyzer*
+## &nbsp; *DNA Sequence Analyzer*
 
 
 
@@ -88,7 +88,8 @@
 
 
 
-* ### **Made By**
+* ### **Author**
 
 ##### &nbsp; - **SAURABH RANJAN (25BAI11436)**
+
 
