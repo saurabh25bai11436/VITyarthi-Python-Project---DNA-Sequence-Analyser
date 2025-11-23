@@ -2,7 +2,7 @@
 
 
 
-## &nbsp;**Project** - *DNA Sequence Analyzer*
+## &nbsp; *DNA Sequence Analyzer*
 
 
 
