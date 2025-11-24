@@ -259,7 +259,7 @@ def mutation_percentage_tool(sequence):
                 percentage = float(input("Enter percentage of bases to mutate (0-100): "))
                 
                 if percentage < 0 or percentage > 100:
-                    print("❌ Error: Percentage must be between 0 and 100")
+                    print(" Error: Percentage must be between 0 and 100")
                     continue
                 
                 mutated, mutations = simulate_mutations_with_percentage(sequence, percentage)
@@ -284,7 +284,7 @@ def mutation_percentage_tool(sequence):
                 probability = float(input("Enter mutation probability per base (0.0-1.0): "))
                 
                 if probability < 0 or probability > 1:
-                    print("❌ Error: Probability must be between 0.0 and 1.0")
+                    print(" Error: Probability must be between 0.0 and 1.0")
                     continue
                 
                 mutated, mutations = simulate_random_mutations(sequence, probability)
@@ -425,3 +425,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
