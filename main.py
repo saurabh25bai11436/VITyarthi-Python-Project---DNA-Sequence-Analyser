@@ -67,8 +67,44 @@ def calculate_at_gc_ratio(sequence):
     ratio = at_count / gc_count
     return round(ratio, 2)
 
+def find_pattern_occurrences(sequence, pattern):
+    """Find all occurrences of a pattern in the sequence"""
+    sequence = sequence.upper()
+    pattern = pattern.upper()
+    positions = []
+    start = 0
+    
+    while True:
+        pos = sequence.find(pattern, start)
+        if pos == -1:
+            break
+        positions.append(pos)
+        start = pos + 1
+    
+    return positions
+
+def find_palindromic_sequences(sequence, min_length=4):
+    """Find palindromic sequences (same as reverse complement)"""
+    sequence = sequence.upper()
+    palindromes = []
+    
+    for length in range(min_length, min(8, len(sequence) + 1)):
+        for i in range(len(sequence) - length + 1):
+            substring = sequence[i:i + length]
+            complement = get_complementary_strand(substring)
+            reverse_complement = complement[::-1]
+            
+            if substring == reverse_complement:
+                palindromes.append({
+                    'sequence': substring,
+                    'position': i,
+                    'length': length
+                })
+    
+    return palindromes
+
 def main():
-    """DNA Sequence Analyzer - Statistics Version"""
+    """DNA Sequence Analyzer - Pattern Search Version"""
     print("=" * 60)
     print("DNA Sequence Analyzer")
     print("=" * 60)
@@ -76,17 +112,26 @@ def main():
     dna_input = input("Enter DNA sequence (A, T, C, G only): ").strip().upper()
     
     if not is_valid_dna(dna_input):
-        print("❌ Invalid DNA sequence! Only A, T, C, G characters allowed.")
+        print(" Invalid DNA sequence! Only A, T, C, G characters allowed.")
         return
     
-    print("✅ Valid DNA sequence!")
+    print(" Valid DNA sequence!")
     print(f"Length: {len(dna_input)} nucleotides")
-    print(f"GC Content: {calculate_gc_content(dna_input)}%")
-    print(f"AT/GC Ratio: {calculate_at_gc_ratio(dna_input)}")
     
-    print(f"\nBase Composition:")
-    for base, count, percentage in analyze_base_composition(dna_input):
-        print(f"  {base}: {count} bases ({percentage}%)")
+    # Pattern search
+    pattern = input("Enter pattern to search for: ").strip().upper()
+    positions = find_pattern_occurrences(dna_input, pattern)
+    if positions:
+        print(f"Pattern '{pattern}' found {len(positions)} times at positions: {positions}")
+    else:
+        print(f"Pattern '{pattern}' not found")
+    
+    # Palindrome search
+    palindromes = find_palindromic_sequences(dna_input)
+    if palindromes:
+        print(f"Found {len(palindromes)} palindromic sequences")
+        for i, palindrome in enumerate(palindromes[:2], 1):
+            print(f"  {i}. '{palindrome['sequence']}' at position {palindrome['position']}")
 
 if __name__ == "__main__":
     main()
