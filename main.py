@@ -71,10 +71,10 @@ def main():
     dna_input = input("Enter DNA sequence (A, T, C, G only): ").strip().upper()
     
     if not is_valid_dna(dna_input):
-        print("❌ Invalid DNA sequence! Only A, T, C, G characters allowed.")
+        print(" Invalid DNA sequence! Only A, T, C, G characters allowed.")
         return
     
-    print("✅ Valid DNA sequence!")
+    print(" Valid DNA sequence!")
     print(f"Original: {dna_input}")
     
     try:
@@ -86,9 +86,9 @@ def main():
             for mutation in mutations[:3]:
                 print(f"  {mutation}")
         else:
-            print("❌ Percentage must be between 0 and 100")
+            print(" Percentage must be between 0 and 100")
     except ValueError:
-        print("❌ Please enter a valid number")
+        print(" Please enter a valid number")
 
 if __name__ == "__main__":
     main()
