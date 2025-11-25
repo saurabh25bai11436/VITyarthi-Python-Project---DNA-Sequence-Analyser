@@ -105,7 +105,7 @@
 
 ###### &nbsp; -Input: Enter 'ATCGGCATCG'
 
-###### &nbsp; -Expected Output: You should see "GC Content: 50%" and "RNA: AUCGGCAUCG".  
+###### &nbsp; -Expected Output: You should see "GC Content: 60%" and "RNA: AUCGGCAUCG".  
 
 ###### &nbsp; -Mutation Test: Select Option 3 in the menu and enter "10%". The system will show the mutated string with 1 base changed.
 
@@ -114,5 +114,6 @@
 * ### **Author**
 
 ##### &nbsp; - **SAURABH RANJAN (25BAI11436)**
+
 
 
