@@ -1,6 +1,6 @@
 # &nbsp;          Project Statement: ***DNA Sequence Analyzer***
 
-#### &nbsp;                            (An Interdisciplinary Project) 
+#### &nbsp;                                  (An Interdisciplinary Project) 
 
 ### &nbsp;1. Problem Statement
 
@@ -53,6 +53,7 @@
 * ### &nbsp;Authored By
 
 ##### &nbsp;    SAURABH RANJAN (25BAI11436)
+
 
 
 
