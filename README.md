@@ -101,6 +101,7 @@
 
 
 * ### **Testing Instructions**
+<img width="486" height="388" alt="image" src="https://github.com/user-attachments/assets/01260850-b444-4ddf-af11-fbde814b8ecd" />
 
 ###### &nbsp; -Input: Enter 'ATCGGCATCG'
 
@@ -113,4 +114,5 @@
 * ### **Author**
 
 ##### &nbsp; - **SAURABH RANJAN (25BAI11436)**
+
 
