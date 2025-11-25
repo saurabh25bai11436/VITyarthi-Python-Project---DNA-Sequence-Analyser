@@ -35,6 +35,8 @@
 
 
 ### &nbsp;4. High-Level Features
+<img width="572" height="327" alt="image" src="https://github.com/user-attachments/assets/6a5440c6-72ae-466d-9c56-965b6eb4fca5" />
+
 
 ###### &nbsp;     -Input Validation: strict checking mechanism to ensure only valid nucleotides (A, T, C, G) are processed.     
 
@@ -51,4 +53,5 @@
 * ### &nbsp;Authored By
 
 ##### &nbsp;  SAURABH RANJAN (25BAI11436)
+
 
